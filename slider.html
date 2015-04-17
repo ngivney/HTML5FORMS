@@ -1,0 +1,25 @@
+<table><tr><td colspan="3">
+<input type="range" min="0" max="100" value="50" step="1" onchange="showRange(this.value)" />
+</td></tr>
+<tr>
+<td width="33" align="left">
+0
+</td>	
+<td width="33" align="center">
+50
+</td>
+<td width="34" align="right">
+100
+</td></tr>
+</table><table>
+<tr><td>
+<span id="range">50</span>
+</td></tr>
+</table>
+
+<script type="text/javascript">
+function showRange(newRange)
+{
+	document.getElementById("range").innerHTML=newRange;
+}
+</script>
